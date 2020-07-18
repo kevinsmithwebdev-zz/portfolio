@@ -1,0 +1,52 @@
+{
+  "skills": {
+    "frontend": {
+      "text": "Front End",
+      "list": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "jQuery",
+        "D3.js",
+        "Highcharts",
+        "React",
+        "Redux",
+        "React Router",
+        "React Native",
+        "Sass"
+      ]
+    },
+    "backend": {
+      "text": "Back End",
+      "list": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Passport",
+        "PHP",
+        "Handlebars"
+      ]
+    },
+    "other": {
+      "text": "Other",
+      "list": [
+        "Github",
+        "Heroku",
+        "mLab",
+        "Atom",
+        "Webpack",
+        "Expo",
+        "Google Play"
+      ]
+    }
+  },
+  "text": [
+    [
+      "I love learning new libraries and technologies, so please don't be afraid to ask.",
+      "Technologies I also use include RESTful APIs (use and development), sockets, and JSON.",
+      "In my past life as a programmer and then hobbyist, I have also worked with Pascal, C, assembly, Fortran, COBOL, Basic, and VBA, and I've dabbled in C++ and Java."
+    ]
+  ]
+}

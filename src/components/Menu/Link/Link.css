@@ -1,0 +1,13 @@
+.Link .link-button {
+  transition: 0.25s ease;
+  background: rgba(0, 0, 0, 0);
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  padding: 6px 0;
+  margin: 0 20px; }
+
+.Link .link-button:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding: 2px 0; }
