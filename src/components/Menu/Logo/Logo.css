@@ -1,5 +1,6 @@
 .Logo {
-  color: #aaa; }
+  color: #aaa;
+  font-size: 20px; }
   .Logo .highlight {
     transition: color 1s ease-in-out;
     -o-transition: color 1s ease-in-out;

@@ -1,2 +1,4 @@
-#Introduction {
-  width: 300px; }
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }

@@ -1,0 +1,15 @@
+.Button {
+  font-size: 125%;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.25s;
+  min-width: 100px; }
+
+.Button.active {
+  cursor: pointer; }
+
+.Button.inactive {
+  cursor: not-allowed; }
+
+.Button .active:hover {
+  transform: scale(1.025); }

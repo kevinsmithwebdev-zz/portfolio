@@ -1,0 +1,18 @@
+.Painting {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 150px;
+  transition: transform .25s; }
+  .Painting .image {
+    align-self: center;
+    width: 130px;
+    height: auto; }
+  .Painting .label {
+    text-overflow: wrap;
+    text-align: center;
+    padding: 5px; }
+
+.Painting:hover {
+  transform: scale(1.025);
+  cursor: pointer; }

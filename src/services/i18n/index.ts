@@ -4,7 +4,7 @@ import en from './locales/en';
 import es from './locales/es';
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources: { en, es },
     lng: "en",
@@ -14,3 +14,5 @@ i18n
       escapeValue: false
     }
   });
+
+export default i18n;

@@ -1,18 +1,33 @@
 import React from 'react';
-import sectionize from '../../common/HOCs/sectionize';
-import textData from './aboutMeText.data';
+import { useTranslation } from 'react-i18next';
 import renderText from '../../common/utilities/text/renderText';
+import SectionContainer from '../../common/SectionContainer/SectionContainer';
+import { docsURLObj } from '../../common/utilities/URLs/getURLs';
+
 import './AboutMe.css'
 
-const AboutMeComponent = () => (
-  <div className='AboutMe'>
-    { renderText(textData) }
+const DocsSection = () => {
+  const { resume, cover } = docsURLObj;
+  return (
     <div className='links'>
-      <a href='./resume/Kevin Smith - Resume.pdf'>Resume</a>
-      <a href='./resume/Kevin Smith - Cover Letter.pdf'>Cover Letter</a>
+      <a href={ resume }>Resume</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href={ cover }>Cover Letter</a>
     </div>
-  </div>
-);
+  );
+}
 
-const withSection = sectionize({ title: 'About Me', isCollapsible: true });
-export default withSection(AboutMeComponent);
+const AboutMeComponent = () => {
+  const { t } = useTranslation();
+  const textData = t('aboutMeTextData', { returnObjects: true });
+
+  return (
+    <SectionContainer titleSlug='about-me' isCollapsible>
+      <DocsSection />
+      { renderText(textData) }
+      <DocsSection />
+    </SectionContainer>
+  );
+}
+
+export default AboutMeComponent;

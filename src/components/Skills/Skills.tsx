@@ -1,22 +1,28 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 import SkillsSection from './SkillsSection/SkillsSection';
 import './Skills.css'
 import skillsData from './skills.data.json';
-import sectionize from '../../common/HOCs/sectionize';
+import renderText from '../../common/utilities/text/renderText';
+import SectionContainer from '../../common/SectionContainer/SectionContainer';
 
 
 const SkillsComponent = () => {
-  console.log('asdf', skillsData);
+  const { t } = useTranslation();
+  console.log('asdf1', t('sections.skills'));
+  console.log('asdf1', t('skills.text', { returnObjects: true }));
   return (
-    <div>
-      <SkillsSection data={ skillsData.skills.frontend }/>
-      <p>Blah, blah, blah</p>
-      <p>Blah, blah, blah</p>
-      <p>Blah, blah, blah</p>
-      <p>Blah, blah, blah</p>
-    </div>
-  );
-};
+    <SectionContainer titleSlug='skills' isCollapsible >
+      <SkillsSection key='frontend' data={ skillsData.frontend } slug='frontend' />
+      <SkillsSection key='backend' data={ skillsData.backend } slug='backend' />
+      <SkillsSection key='other' data={ skillsData.other } slug='other' />
+      <SkillsSection key='past' data={ skillsData.past } slug='past' />
 
-const withSection = sectionize({ title: 'Skills' });
-export default withSection(SkillsComponent);
+      <hr/>
+
+      { renderText(t('skills.text', { returnObjects: true }))}
+    </SectionContainer>
+  );
+}
+
+export default SkillsComponent;

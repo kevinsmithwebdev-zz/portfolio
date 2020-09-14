@@ -1,0 +1,189 @@
+[
+  {
+    "name": "Carrier 360 Mobile",
+    "text": "Working with the JB Hunt team, I've gotten work on this amazing app. It allows drivers to find, bid on, and book loads and then provide status updates which dispatchers can monitor. I am part of a team of 25 devs working on this mobile app, part of a larger team of hundreds.",
+    "techs": [ "React", "React Native", "Redux", "Redux Saga", "React Navigation", "React Hooks", "Jest", "e2e Tests", "Custom eslint Rules", "Sonar", "Android", "iOS", "Javascript"],
+    "imgStem": "carrier360",
+    "buttons": [
+      { "textSlug": "android", "link": "https://play.google.com/store/apps/details?id=com.jbhunt.JBH360Carrier" },
+      { "textSlug": "ios", "link": "https://apps.apple.com/us/app/carrier-360-by-j-b-hunt/id1097181984" },
+      { "textSlug": "code", "link": "" }
+    ],
+    "comments": "The code for this app is the intellectual property of JB Hunt."
+  },
+  {
+    "name": "Chopin Chords",
+    "text": "OK, this is hard to explain unless you've had some advanced music theory. Chopin (and others) had an interesting way of constructing chord progressions that had to do with the \"proximity\" of the chord, or how close the notes were and how they voice led. I had to come up with a formula to measure chord proximity and then created this little React app to make it easy to see what chords are \"closest\".",
+    "techs": [ "HTML", "CSS", "JavaScript", "React"],
+    "imgStem": "chopin",
+    "buttons": [
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/chopin/index" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/chopin" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Timezones Conversion",
+    "text": "An app to convert between timezones. If you have to make a phone call and need to know what times match up in each timezone, then this app is for you. A React/Redux/Thunk frontend uses a Node/Express backend to handle the calls to Google's map and timezone API. The server is deployed to Heroku.",
+    "techs": [ "HTML", "CSS", "JavaScript", "React", "Redux", "Node.js", "Express", "Heroku"],
+    "imgStem": "timezones",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/timezones/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/timezones" }
+    ],
+    "comments": "This is an example of a comment."
+  },
+  {
+    "name": "Pinterest-ish Thing",
+    "text": "This was a full stack app for the Free Code Camp program. It's roughly a pinterest-type app where users can add and remove image and rate others'. This run on Heroku so it may take several seconds to start up initially.",
+    "techs": [ "HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "Mongoose", "Passport", "Handlebars", "Heroku", "mLab"],
+    "imgStem": "pinteresttype",
+    "buttons": [
+      { "textSlug": "app", "link": "https://ksj-fccbe-image.herokuapp.com/" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/image-sharer" }
+    ],
+    "comments": "This app cannot log in at the moment due to changes in Facebook's OAuth policy."
+  },
+  {
+    "name": "Game of Life",
+    "text": "OK, this was just plain fun. Another FCC app, this was Conway's Game of Life, done in React.",
+    "techs": [ "HTML", "CSS", "JavaScript", "React", "Sass"],
+    "imgStem": "gameoflife",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/gameoflife/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/game-of-life" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Metric Test Mobile",
+    "text": "This is my first React Native app. It was a chance to use Expo and learn the React Native lifecycle and push it to Google Play as a live app.",
+    "techs": [ "HTML", "CSS", "JavaScript", "React Native", "Expo", "Google Play", "Android" ],
+    "imgStem": "metr-rn",
+    "buttons": [
+      { "textSlug": "android", "link": "https://play.google.com/store/apps/details?id=com.kevinsmithwebdev.metr&hl=en" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/metr-rn" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Rachel Turgoose Site",
+    "text": "This was one of the first web sites I built after completing web development training. It was a learning experience to work with a client and to understand and meet her needs while trying to sugest what is possible. This is a pet project of mine and will continue to improve. One hurdle was accessing the Google API to get her calendar info so I could parse it.",
+    "techs": [ "HTML", "CSS", "Sass", "JavaScript"],
+    "imgStem": "turgoose",
+    "buttons": [
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Turgoose" }
+    ],
+    "comments": "The site is no longer active."
+  },
+  {
+    "name": "Repertoire",
+    "text": "This app excites me. Not only is it a chance to work on my React skills, but this was my first Redux app. It's not complete - it should allow you to edit the entries for full CRUD. But now I realize I really should be doing this in React Native as this would be most useful in a mobile app. This is the kind of app I would use every day - I'm looking forward to launching this.",
+    "techs": [ "JavaScript", "CSS", "React", "Redux", "React Native" ],
+    "imgStem": "repr",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/repr/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/repertoire" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Nightlife",
+    "text": "Another Free Code Camp app, this checks your location and shows you nightlife places near your location and how many people are planning on going. You can tell if you plan to go as well. This run on Heroku so it may take several seconds to start up initially.",
+    "techs": [ "HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "Mongoose", "Passport", "Handlebars", "Heroku", "mLab"],
+    "imgStem": "nightlife",
+    "buttons": [
+      { "textSlug": "app", "link": "https://ksj-fccbe-nightlife.herokuapp.com/" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/nightlife" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Recipe Box",
+    "text": "Another Free Code Camp app, this is a a recipe box. The interesting kink in this project was the need to persist the data in the users's browser's local storage. It comes preloaded with three of my favorite recipes.",
+    "techs": [ "HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    "imgStem": "recipebox",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/recipebox/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/recipe-box" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Kevin Smith Site",
+    "text": "This is one I built for myself years ago, before I knew what I was doing. I look forward to redoing it right.",
+    "techs": [ "HTML", "CSS", "Sass", "JavaScript", "PHP" ],
+    "imgStem": "ksjazzguitar",
+    "buttons": [
+      { "textSlug": "app", "link": "http://www.kevinsmithguitar.com" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/kevinsmithguitar" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Heat Map Graph",
+    "text": "Another Free Code Camp app, a chance to use the D3.js graphing library, it graphs global head data by year and month.",
+    "techs": [ "HTML", "CSS", "JavaScript", "D3.js"],
+    "imgStem": "heatmap",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/heatmap/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/heat-map" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Voting",
+    "text": "Another Free Code Camp app, a fullstack app where the users can log in and create polls where others can vote. I also used the ZingChart Library.",
+    "techs": [ "HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "Mongoose", "Passport", "Handlebars", "Heroku", "mLab"],
+    "imgStem": "voting",
+    "buttons": [
+      { "textSlug": "app", "link": "https://ksj-fccbe-voting.herokuapp.com/" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/voter" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Dungeon Crawler",
+    "text": "OK, a little fun, a dungeon crawler for FCC again.",
+    "techs": [ "HTML", "CSS", "JavaScript", "React", "Sass"],
+    "imgStem": "dungeon",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/dungeon/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/dungeon-crawler" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Portfolio Page",
+    "text": "Well, obviously this page is an example of my coding. It's not done yet (this is just a quick job) and I hope to redo it in React and React Router.",
+    "techs": [ "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "imgStem": "portfolio",
+    "buttons": [
+      { "textSlug": "app", "link": "kevinsmithwebdev.com" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/portfolio" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "Stock Tracker",
+    "text": "Another FCC fullstack project, making a stock tracker. One of the wrinkles was to use sockets (suprisingly easy) so that stocks added or deleted by users would change what other users see. Using Heroku, it may take a few seconds to load the first time.",
+    "techs": [ "HTML", "CSS", "JavaScript", "Highcharts", "Node.js", "Express", "Handlebars", "Heroku"],
+    "imgStem": "stocktracker",
+    "buttons": [
+      { "textSlug": "app", "link": "https://ksj-fccbe-stock.herokuapp.com/" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/stock-tracker" }
+    ],
+    "comments": ""
+  },
+  {
+    "name": "GDP Bar Chart",
+    "text": "Another FCC project, using D3.js to create a bar chart of GDP data, with tooltips.",
+    "techs": [ "HTML", "CSS", "Bootstrap", "JavaScript", "D3.js"],
+    "imgStem": "gdpbarchart",
+    "buttons": [
+      { "textSlug": "app", "link": "./apps/gdpbarchart/index.html" },
+      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/bar-chart" }
+    ],
+    "comments": ""
+  }
+]

@@ -1,0 +1,28 @@
+.SectionFooter {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 30px;
+  transition: background-color 0.25s;
+  z-index: 0;
+  cursor: pointer;
+  box-shadow: 0 -2px 2px -1px rgba(0, 0, 0, 0.2); }
+
+.SectionFooter.collapsed {
+  color: green; }
+
+.SectionFooter.open {
+  color: red; }
+
+.SectionFooter.collapsed:hover {
+  background-color: rgba(220, 255, 220, 0.95); }
+
+.SectionFooter.open:hover {
+  background-color: rgba(255, 220, 220, 0.95); }
+
+.iconWrapper {
+  z-index: 999; }

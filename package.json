@@ -21,7 +21,7 @@
   "scripts": {
     "build:css": "node-sass src/ -o src/ ",
     "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
-    "start": "react-scripts start",
+    "start": "npm run watch:css & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

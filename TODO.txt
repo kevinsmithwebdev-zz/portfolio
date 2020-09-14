@@ -1,0 +1,5 @@
+Categories not localizing in Skills
+review skills list
+localize "Custom eslint rules" in skills
+for API skills, use the same logo
+get skills to auto index through keys

@@ -1,0 +1,24 @@
+$painting-width: 150px
+$painting-padding: 10px
+
+
+.Painting
+  display: flex
+  flex-direction: column
+  padding: $painting-padding
+  width: $painting-width
+  transition: transform .25s
+
+  .image
+    align-self: center
+    width: $painting-width - ($painting-padding * 2)
+    height: auto
+
+  .label
+    text-overflow: wrap
+    text-align: center
+    padding: 5px
+
+.Painting:hover
+  transform: scale(1.025)
+  cursor: pointer

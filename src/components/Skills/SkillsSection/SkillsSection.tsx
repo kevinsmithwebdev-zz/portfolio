@@ -1,24 +1,23 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
+import Skill from './Skill/Skill';
+
+import './SkillsSection.css';
 
 interface PropsInterface {
-  data: {
-    text: string,
-    list: Array<string>,
-  },
+  data: string[],
+  slug?: string,
 }
 
-const renderSkill = (label: string) => (
-  <span key={ label }>{ label }</span>
-);
-
-
-const SkillsSection: React.SFC<PropsInterface> = ({ data: { text, list } }) => {
-  console.log('asdf4', list);
+const SkillsSection: React.FC<PropsInterface> = ({ data, slug }) => {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h3>{ text }</h3>
-      { list.map(renderSkill) }
-    </div>
+    <>
+      <h3 className='skillsListHeader'>{ t(`skills.sections.${slug}`) }</h3>
+      <div className='skillsListWrapper'>
+        { data.map(label => <Skill key={ label } label={ label } />) }
+      </div>
+    </>
   );
 };
 

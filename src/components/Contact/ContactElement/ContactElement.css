@@ -1,0 +1,11 @@
+.ContactElement {
+  font-size: 125%;
+  margin: 5px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all ease-in-out 0.25s; }
+
+.ContactElement:hover {
+  transform: scale(1.035); }

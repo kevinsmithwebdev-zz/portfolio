@@ -8,7 +8,7 @@ const links = [
   'introduction',
   'gallery',
   'skills',
-  'about me',
+  'about-me',
   'contact',
 ];
 
