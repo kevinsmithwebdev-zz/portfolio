@@ -2,10 +2,15 @@
   color: white;
   display: flex;
   background-color: #333;
-  padding: 10px 20px;
+  padding: 5px;
+  margin: 0;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  align-items: center; }
+
+.Menu .links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap; }
-  .Menu .links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }

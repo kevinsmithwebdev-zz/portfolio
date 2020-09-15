@@ -1,5 +1,14 @@
-Categories not localizing in Skills
+
 review skills list
-localize "Custom eslint rules" in skills
+localize skills
+localize gallery texts
+localize doc links
 for API skills, use the same logo
-get skills to auto index through keys
+convert all logos to logos with backgrounds (looks better)
+convert gallery images to jpg (load faster)
+collapse menu to hamburger or dango on shrink?
+email button on navbar
+add copyright
+load json files from s3? spinners?
+detect language?
+better section collapse/expand
