@@ -5,41 +5,33 @@ import Painting from './Painting/Painting';
 import SectionContainer from '../../common/SectionContainer/SectionContainer'
 import PaintingModalBody from './PaintingModalBody/PaintingModalBody';
 import Button from '../../common/Button/Button';
+import convertToTitleCase from '../../common/utilities/text/convertToTitleCase';
 
 type PropsTypes = {
   setModalData: Function,
 }
 
-type ButtonColorType = {
+type ButtonDatumType = {
   color: string,
   backgroundColor: string,
+  label?: string,
 }
-
-type ButtonColorsType = {
-  [key: string]: ButtonColorType,
-}
-
-type ButtonLabelsType = {
-  [key: string]: string,
-}
-
-// TODO: i18n
-const buttonLabels = {
-  app: 'See the Live App',
-  code: 'See the Code',
-  ios: 'iOS',
-  close: 'Close',
-} as ButtonLabelsType;
-
-const buttonColors = {
-  app: { color: 'white', backgroundColor: 'green' },
-  code: { color: 'white', backgroundColor: 'blue' },
-  android: { color: 'white', backgroundColor: '#a4c639' },
-  ios: { color: 'white', backgroundColor: 'black' },
-  close: { color: 'white', backgroundColor: 'red' },
-} as ButtonColorsType;
 
 type ButtonDataType = {
+  [key: string]: ButtonDatumType,
+}
+
+const buttonsData = {
+  app: { color: 'white', backgroundColor: 'green' },
+  repo: { color: 'white', backgroundColor: 'blue' },
+  android: { color: 'white', backgroundColor: '#a4c639' },
+  ios: { label: 'iOS', color: 'white', backgroundColor: 'black' },
+  npm: { label: 'npm', color: 'white', backgroundColor: 'black' },
+  demo: { color: 'white', backgroundColor: 'green' },
+  close: { color: 'white', backgroundColor: 'red' },
+} as ButtonDataType;
+
+type ButtonInputType = {
   textSlug: string,
   link: string,
 }
@@ -49,20 +41,18 @@ type RenderButtonType = {
   setModalData: Function,
 }
 
-const renderButton = ({ textSlug, link }: ButtonDataType, setModalData: Function): any => {
-  const colors = buttonColors[textSlug] || {};
-  const label = buttonLabels[textSlug] || textSlug;
+const renderButton = ({ textSlug, link }: ButtonInputType, setModalData: Function): any => {
+  const buttonData = buttonsData[textSlug] || {};
+  const label = buttonData.label || convertToTitleCase(textSlug);
   const theCallback = textSlug === 'close' ? () => setModalData(null) : null
   const isDisabled = !theCallback && !link;
 
   return (
     <Button
       key={ label }
-      label={ label }
       link={ link }
       callback={ theCallback }
-      color={ colors.color }
-      backgroundColor={ colors.backgroundColor }
+      buttonData={ { ...buttonData, label } }
       isDisabled={ isDisabled }
     />
   );

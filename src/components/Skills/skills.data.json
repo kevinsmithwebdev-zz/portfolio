@@ -12,6 +12,7 @@
     "React Navigation",
     "React Native",
     "Sass",
+    "i18n",
     "API Integration"
   ],
   "backend":[
@@ -31,6 +32,7 @@
     "Scrum",
     "Kanban",
     "Jest",
+    "React Testing Library",
     "Unit Tests",
     "e2e Tests",
     "Custom eslint rules",

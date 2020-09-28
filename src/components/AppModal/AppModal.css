@@ -15,42 +15,49 @@
   flex: 0;
   flex-direction: column;
   z-index: 100; }
-  .AppModal .commentsSection {
-    padding: 5px; }
-  .AppModal .bodyWrapper {
-    padding: 5px; }
-  .AppModal .buttonsWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3px;
-    flex: 1; }
-  .AppModal .headerWrapper {
-    background-color: #ddd;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    display: flex;
-    justify-content: space-around;
-    position: sticky;
-    text-align: center;
-    top: 0;
-    width: 100%; }
-    .AppModal .headerWrapper .header {
-      flex: 1;
-      margin: 0;
-      padding: 5px; }
-    .AppModal .headerWrapper .closer {
-      position: absolute;
-      right: 3px;
-      top: 3px; }
-      .AppModal .headerWrapper .closer .closeIcon {
-        color: white;
-        background-color: red;
-        border: 2.5px solid red;
-        border-top-width: 1px;
-        border-bottom-width: 1px;
-        border-radius: 3px;
-        cursor: pointer; }
+
+.AppModal .commentsSection {
+  padding: 5px; }
+
+.AppModal .bodyWrapper {
+  padding: 5px; }
+
+.AppModal .buttonsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  flex: 1; }
+
+.AppModal .headerWrapper {
+  background-color: #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+.AppModal .headerWrapper .header {
+  flex: 1;
+  margin: 0;
+  padding: 5px; }
+
+.AppModal .headerWrapper .closer {
+  position: absolute;
+  right: 3px;
+  top: 3px; }
+
+.AppModal .headerWrapper .closer .closeIcon {
+  color: white;
+  background-color: red;
+  border: 2.5px solid red;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-radius: 3px;
+  cursor: pointer; }
 
 .AppModal.visible {
   opacity: 1;

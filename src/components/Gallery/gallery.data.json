@@ -2,25 +2,49 @@
   {
     "name": "Carrier 360 Mobile",
     "text": "Working with the JB Hunt team, I've gotten work on this amazing app. It allows drivers to find, bid on, and book loads and then provide status updates which dispatchers can monitor. I am part of a team of 25 devs working on this mobile app, part of a larger team of hundreds.",
-    "techs": [ "React", "React Native", "Redux", "Redux Saga", "React Navigation", "React Hooks", "Jest", "e2e Tests", "Custom eslint Rules", "Sonar", "Android", "iOS", "Javascript"],
+    "techs": [ "React", "React Native", "Redux", "Redux Saga", "React Navigation", "React Hooks", "i18n", "Jest", "e2e Tests", "Custom eslint Rules", "Sonar", "Android", "iOS", "Javascript"],
     "imgStem": "carrier360",
     "buttons": [
       { "textSlug": "android", "link": "https://play.google.com/store/apps/details?id=com.jbhunt.JBH360Carrier" },
       { "textSlug": "ios", "link": "https://apps.apple.com/us/app/carrier-360-by-j-b-hunt/id1097181984" },
-      { "textSlug": "code", "link": "" }
+      { "textSlug": "repo", "link": "" }
     ],
     "comments": "The code for this app is the intellectual property of JB Hunt."
   },
   {
-    "name": "Chopin Chords",
-    "text": "OK, this is hard to explain unless you've had some advanced music theory. Chopin (and others) had an interesting way of constructing chord progressions that had to do with the \"proximity\" of the chord, or how close the notes were and how they voice led. I had to come up with a formula to measure chord proximity and then created this little React app to make it easy to see what chords are \"closest\".",
-    "techs": [ "HTML", "CSS", "JavaScript", "React"],
-    "imgStem": "chopin",
+    "name": "React Lectorem",
+    "text": "This is my first time writing an npm package. During Covid, my wife needed to move a lot of her Spanish Teaching online. This is a React package that will highlight words as the audio reads them. Words can also be clicked to get translations and explanations. It was also a chance to learn TypeScript.",
+    "techs": [ "React", "TypeScript", "React Hooks", "Jest", "React Testing Library", "CI Pipeline" ],
+    "imgStem": "lectorem",
     "buttons": [
-      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/chopin/index" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/chopin" }
+      { "textSlug": "demo", "link": "https://kevinsmithwebdev.github.io/apps/lectorem-demo/index.html" },
+      { "textSlug": "npm", "link": "https://www.npmjs.com/package/react-lectorem" },
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/react-lectorem" }
     ],
-    "comments": ""
+    "comments": "No one else has contributed yet. 😟  But I remain hopeful. 😀"
+  },
+  {
+    "name": "Portfolio Page",
+    "text": "Well, obviously this page is an example of my coding. The old one was jQuery, but I recently upgraded.",
+    "techs": [ "React", "React Hooks", "TypeScript", "Sass","i18n", "Jest"],
+    "imgStem": "portfolio",
+    "buttons": [
+      { "textSlug": "app", "link": "kevinsmithwebdev.com" },
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/portfolio" }
+    ],
+    "comments": "This is a work in progress."
+  },
+  {
+    "name": "Author's Page",
+    "text": "My wife writes books to teach Spanish to children. I keep working on a page to help her sell these.",
+    "techs": [ "React", "React Hooks", "React Router", "Sass", "Node.js", "Express"],
+    "imgStem": "hfls",
+    "buttons": [
+      { "textSlug": "app", "link": "http://havefunlearningspanish.com/" },
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/hfls" },
+      { "textSlug": "server", "link": "https://github.com/kevinsmithwebdev/hfls-server" }
+    ],
+    "comments": "This is a work in progress."
   },
   {
     "name": "Timezones Conversion",
@@ -29,9 +53,20 @@
     "imgStem": "timezones",
     "buttons": [
       { "textSlug": "app", "link": "./apps/timezones/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/timezones" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/timezones" }
     ],
-    "comments": "This is an example of a comment."
+    "comments": ""
+  },
+  {
+    "name": "Chopin Chords",
+    "text": "OK, this is hard to explain unless you've had some advanced music theory. Chopin (and others) had an interesting way of constructing chord progressions that had to do with the \"proximity\" of the chord, or how close the notes were and how they voice led. I had to come up with a formula to measure chord proximity and then created this little React app to make it easy to see what chords are \"closest\".",
+    "techs": [ "HTML", "CSS", "JavaScript", "React"],
+    "imgStem": "chopin",
+    "buttons": [
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/chopin/index" },
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/chopin" }
+    ],
+    "comments": ""
   },
   {
     "name": "Pinterest-ish Thing",
@@ -40,7 +75,7 @@
     "imgStem": "pinteresttype",
     "buttons": [
       { "textSlug": "app", "link": "https://ksj-fccbe-image.herokuapp.com/" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/image-sharer" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/image-sharer" }
     ],
     "comments": "This app cannot log in at the moment due to changes in Facebook's OAuth policy."
   },
@@ -51,7 +86,7 @@
     "imgStem": "gameoflife",
     "buttons": [
       { "textSlug": "app", "link": "./apps/gameoflife/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/game-of-life" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/game-of-life" }
     ],
     "comments": ""
   },
@@ -62,7 +97,7 @@
     "imgStem": "metr-rn",
     "buttons": [
       { "textSlug": "android", "link": "https://play.google.com/store/apps/details?id=com.kevinsmithwebdev.metr&hl=en" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/metr-rn" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/metr-rn" }
     ],
     "comments": ""
   },
@@ -72,7 +107,7 @@
     "techs": [ "HTML", "CSS", "Sass", "JavaScript"],
     "imgStem": "turgoose",
     "buttons": [
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Turgoose" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Turgoose" }
     ],
     "comments": "The site is no longer active."
   },
@@ -83,7 +118,7 @@
     "imgStem": "repr",
     "buttons": [
       { "textSlug": "app", "link": "./apps/repr/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/repertoire" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/repertoire" }
     ],
     "comments": ""
   },
@@ -94,7 +129,7 @@
     "imgStem": "nightlife",
     "buttons": [
       { "textSlug": "app", "link": "https://ksj-fccbe-nightlife.herokuapp.com/" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/nightlife" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/nightlife" }
     ],
     "comments": ""
   },
@@ -105,7 +140,7 @@
     "imgStem": "recipebox",
     "buttons": [
       { "textSlug": "app", "link": "./apps/recipebox/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/recipe-box" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/recipe-box" }
     ],
     "comments": ""
   },
@@ -116,7 +151,7 @@
     "imgStem": "ksjazzguitar",
     "buttons": [
       { "textSlug": "app", "link": "http://www.kevinsmithguitar.com" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/kevinsmithguitar" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/kevinsmithguitar" }
     ],
     "comments": ""
   },
@@ -127,7 +162,7 @@
     "imgStem": "heatmap",
     "buttons": [
       { "textSlug": "app", "link": "./apps/heatmap/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/heat-map" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/heat-map" }
     ],
     "comments": ""
   },
@@ -138,7 +173,7 @@
     "imgStem": "voting",
     "buttons": [
       { "textSlug": "app", "link": "https://ksj-fccbe-voting.herokuapp.com/" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/voter" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/voter" }
     ],
     "comments": ""
   },
@@ -149,18 +184,7 @@
     "imgStem": "dungeon",
     "buttons": [
       { "textSlug": "app", "link": "./apps/dungeon/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/dungeon-crawler" }
-    ],
-    "comments": ""
-  },
-  {
-    "name": "Portfolio Page",
-    "text": "Well, obviously this page is an example of my coding. It's not done yet (this is just a quick job) and I hope to redo it in React and React Router.",
-    "techs": [ "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
-    "imgStem": "portfolio",
-    "buttons": [
-      { "textSlug": "app", "link": "kevinsmithwebdev.com" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/portfolio" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/dungeon-crawler" }
     ],
     "comments": ""
   },
@@ -171,7 +195,7 @@
     "imgStem": "stocktracker",
     "buttons": [
       { "textSlug": "app", "link": "https://ksj-fccbe-stock.herokuapp.com/" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/stock-tracker" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/stock-tracker" }
     ],
     "comments": ""
   },
@@ -182,7 +206,7 @@
     "imgStem": "gdpbarchart",
     "buttons": [
       { "textSlug": "app", "link": "./apps/gdpbarchart/index.html" },
-      { "textSlug": "code", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/bar-chart" }
+      { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/bar-chart" }
     ],
     "comments": ""
   }

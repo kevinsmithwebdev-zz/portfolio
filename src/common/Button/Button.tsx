@@ -1,19 +1,28 @@
 import React from 'react';
 import './Button.css';
-// import { ButtonType } from '../../common/types';
 
-type ButtonType = {
-  label: string,
-  link?: string,
-  callback?: Function,
+// TODO: get from common file
+type ButtonDatumType = {
   color: string,
   backgroundColor: string,
+  label?: string,
+}
+
+type ButtonType = {
+  link?: string,
+  callback?: Function | null,
+  buttonData: ButtonDatumType,
   isDisabled?: boolean,
 }
 
 
-const Button = ({ label, link, callback, color = 'white', backgroundColor = 'darkgray', isDisabled = false }: any) => {
-  const handleClick = callback || (() => window.open(link));
+const Button = ({ link, callback, buttonData: { label, backgroundColor = 'darkgray', color = 'white' }, isDisabled = false }: ButtonType) => {
+  const handleClick = (e: React.MouseEvent) => {
+    if (callback)
+      callback();
+    else
+      window.open(link);
+  }
   const className = `Button ${isDisabled ? 'inactive' : 'active' }`;
   const style = {
     color: isDisabled ? 'white' : color,

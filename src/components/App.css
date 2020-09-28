@@ -10,7 +10,6 @@ body {
   padding: 0;
   margin: 0;
   background: url(https://kswd-portfolio.s3-us-west-1.amazonaws.com/main/bg.jpg) no-repeat center center fixed;
-  background-size: 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
