@@ -52,7 +52,7 @@
     "techs": [ "HTML", "CSS", "JavaScript", "React", "Redux", "Node.js", "Express", "Heroku"],
     "imgStem": "timezones",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/timezones/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/timezones/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/timezones" }
     ],
     "comments": ""
@@ -77,7 +77,7 @@
       { "textSlug": "app", "link": "https://ksj-fccbe-image.herokuapp.com/" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/image-sharer" }
     ],
-    "comments": "This app cannot log in at the moment due to changes in Facebook's OAuth policy."
+    "comments": "This app is hosted on heroku so it may take several seconds to load."
   },
   {
     "name": "Game of Life",
@@ -85,7 +85,7 @@
     "techs": [ "HTML", "CSS", "JavaScript", "React", "Sass"],
     "imgStem": "gameoflife",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/gameoflife/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/gameoflife/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/game-of-life" }
     ],
     "comments": ""
@@ -117,7 +117,7 @@
     "techs": [ "JavaScript", "CSS", "React", "Redux", "React Native" ],
     "imgStem": "repr",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/repr/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/repr/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/repertoire" }
     ],
     "comments": ""
@@ -131,7 +131,7 @@
       { "textSlug": "app", "link": "https://ksj-fccbe-nightlife.herokuapp.com/" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/nightlife" }
     ],
-    "comments": ""
+    "comments": "This app cannot log in at the moment due to changes in Facebook's OAuth policy. I haven't had the time to fix it. This app is hosted on heroku so it may take several seconds to load."
   },
   {
     "name": "Recipe Box",
@@ -139,7 +139,7 @@
     "techs": [ "HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     "imgStem": "recipebox",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/recipebox/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/recipebox/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/recipe-box" }
     ],
     "comments": ""
@@ -161,7 +161,7 @@
     "techs": [ "HTML", "CSS", "JavaScript", "D3.js"],
     "imgStem": "heatmap",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/heatmap/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/heatmap/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/heat-map" }
     ],
     "comments": ""
@@ -175,7 +175,7 @@
       { "textSlug": "app", "link": "https://ksj-fccbe-voting.herokuapp.com/" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/voter" }
     ],
-    "comments": ""
+    "comments": "This app is hosted on heroku so it may take several seconds to load."
   },
   {
     "name": "Dungeon Crawler",
@@ -183,7 +183,7 @@
     "techs": [ "HTML", "CSS", "JavaScript", "React", "Sass"],
     "imgStem": "dungeon",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/dungeon/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/dungeon/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/React-Sass/dungeon-crawler" }
     ],
     "comments": ""
@@ -197,7 +197,7 @@
       { "textSlug": "app", "link": "https://ksj-fccbe-stock.herokuapp.com/" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/back-end-development-cert/Dynamic-Web-Applications-Projects/stock-tracker" }
     ],
-    "comments": ""
+    "comments": "This app is hosted on heroku so it may take several seconds to load."
   },
   {
     "name": "GDP Bar Chart",
@@ -205,7 +205,7 @@
     "techs": [ "HTML", "CSS", "Bootstrap", "JavaScript", "D3.js"],
     "imgStem": "gdpbarchart",
     "buttons": [
-      { "textSlug": "app", "link": "./apps/gdpbarchart/index.html" },
+      { "textSlug": "app", "link": "https://kevinsmithwebdev.github.io/apps/gdpbarchart/index.html" },
       { "textSlug": "repo", "link": "https://github.com/kevinsmithwebdev/Free-Code-Camp-Certifications/tree/master/data-visualization-cert/D3/bar-chart" }
     ],
     "comments": ""

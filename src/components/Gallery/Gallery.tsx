@@ -46,7 +46,6 @@ const renderButton = ({ textSlug, link }: ButtonInputType, setModalData: Functio
   const label = buttonData.label || convertToTitleCase(textSlug);
   const theCallback = textSlug === 'close' ? () => setModalData(null) : null
   const isDisabled = !theCallback && !link;
-
   return (
     <Button
       key={ label }

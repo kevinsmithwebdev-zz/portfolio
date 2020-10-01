@@ -10,7 +10,6 @@ type PropsType = {
 
 const PaintingModalBody = ({ data }: PropsType) => (
   <div className='PaintingModalBody' >
-
     <img
       className='appImage'
       src={ getGalleryImageURL(data.imgStem) }

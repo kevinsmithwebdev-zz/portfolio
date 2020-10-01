@@ -9,8 +9,7 @@ import SectionContainer from '../../common/SectionContainer/SectionContainer';
 
 const SkillsComponent = () => {
   const { t } = useTranslation();
-  console.log('asdf1', t('sections.skills'));
-  console.log('asdf1', t('skills.text', { returnObjects: true }));
+
   return (
     <SectionContainer titleSlug='skills' isCollapsible >
       <SkillsSection key='frontend' data={ skillsData.frontend } slug='frontend' />
