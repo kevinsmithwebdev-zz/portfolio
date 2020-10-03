@@ -3,20 +3,17 @@
   margin: 30px auto;
   border-radius: 5px;
   max-width: 1200px; }
-
-.SectionContainer .content {
-  padding: 5px 10px;
-  overflow: scroll;
-  max-height: 1000px;
-  transition: max-height .5s; }
-
-.SectionContainer .collapsed {
-  overflow: hidden;
-  max-height: 200px; }
-
-.SectionContainer .title {
-  background-color: gray;
-  color: white;
-  margin: 0;
-  padding: 2px 20px;
-  border-radius: 5px 5px 0 0; }
+  .SectionContainer .content {
+    padding: 5px 10px;
+    overflow: scroll;
+    max-height: 1000px;
+    transition: max-height .5s; }
+  .SectionContainer .collapsed {
+    overflow: hidden;
+    max-height: 200px; }
+  .SectionContainer .title {
+    background-color: gray;
+    color: white;
+    margin: 0;
+    padding: 2px 20px;
+    border-radius: 5px 5px 0 0; }

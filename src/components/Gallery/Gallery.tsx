@@ -6,6 +6,9 @@ import SectionContainer from '../../common/SectionContainer/SectionContainer'
 import PaintingModalBody from './PaintingModalBody/PaintingModalBody';
 import Button from '../../common/Button/Button';
 import convertToTitleCase from '../../common/utilities/text/convertToTitleCase';
+import useRequest from '../../common/hooks/useRequest';
+
+const GALLERY_DATA_URL = 'https://kswd-portfolio.s3-us-west-1.amazonaws.com/data/gallery.data.json';
 
 type PropsTypes = {
   setModalData: Function,
@@ -73,17 +76,35 @@ export const Gallery = ({ setModalData }: PropsTypes): JSX.Element => {
     setModalData({ header, body, buttons, comments: data.comments });
   }
 
+  const { data, isLoading, error } = useRequest(GALLERY_DATA_URL);
+  console.log('asdf data', data);
+  console.log('asdf loading', isLoading);
+  console.log('asdf error', error);
+
+  let body = (
+    <div className='Gallery'>
+      { galleryData.map((painting, idx) => (
+        <Painting
+          key={ painting.name }
+          painting={ painting }
+          idx={ idx }
+          handlePictureClick={ handlePictureClick }
+        />))
+      }
+    </div>
+  );
+
+  if (error) {
+    body = <p>Oops, error loading...</p>
+  } else if (isLoading) {
+    body = <p>loading...</p>;
+  }
+
+
   return (
     <SectionContainer titleSlug = 'gallery' isCollapsible>
       <div className='Gallery'>
-        { galleryData.map((painting, idx) => (
-          <Painting
-            key={ painting.name }
-            painting={ painting }
-            idx={ idx }
-            handlePictureClick={ handlePictureClick }
-          />))
-        }
+        { body }
       </div>
     </SectionContainer>
   );
