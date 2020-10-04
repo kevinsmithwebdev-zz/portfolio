@@ -72,7 +72,7 @@ export const Gallery = ({ setModalData }: PropsTypes): JSX.Element => {
   const { data, isLoading, error, retryFetchData } = useRequest(GALLERY_DATA_URL);
   const myData = data?.data;
   const handlePictureClick = (idx: number) => {
-    const pictureData = data.dat[idx];
+    const pictureData = myData[idx];
     const pictureBody = <PaintingModalBody data={ pictureData }/>;
     const header = pictureData.name;
     const buttons = renderButtons(pictureData.buttons, setModalData);

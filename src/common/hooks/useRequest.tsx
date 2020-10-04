@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-const Origin = ''; // WOWSERS!
-
-const delay = (time: number) => new Promise(res=>setTimeout(res, time));
+const Origin = ''; // asdf work on this
 
 const useRequest = (url: string) => {
   const [data, setData] = useState<any>({});
