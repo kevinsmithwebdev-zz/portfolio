@@ -1,12 +1,13 @@
 import React from 'react';
 import './Gallery.css'
-import galleryData from './gallery.data.json';
 import Painting from './Painting/Painting';
 import SectionContainer from '../../common/SectionContainer/SectionContainer'
 import PaintingModalBody from './PaintingModalBody/PaintingModalBody';
 import Button from '../../common/Button/Button';
 import convertToTitleCase from '../../common/utilities/text/convertToTitleCase';
 import useRequest from '../../common/hooks/useRequest';
+import DataLoading from '../../common/DataLoading/DataLoading';
+import DataError from '../../common/DataError/DataError';
 
 const GALLERY_DATA_URL = 'https://kswd-portfolio.s3-us-west-1.amazonaws.com/data/gallery.data.json';
 
@@ -68,22 +69,19 @@ const renderButtons = (buttons: any, setModalData: any) => {
 }
 
 export const Gallery = ({ setModalData }: PropsTypes): JSX.Element => {
+  const { data, isLoading, error, retryFetchData } = useRequest(GALLERY_DATA_URL);
+  const myData = data?.data;
   const handlePictureClick = (idx: number) => {
-    const data = galleryData[idx];
-    const body = <PaintingModalBody data={ data }/>;
-    const header = data.name;
-    const buttons = renderButtons(data.buttons, setModalData);
-    setModalData({ header, body, buttons, comments: data.comments });
+    const pictureData = data.dat[idx];
+    const pictureBody = <PaintingModalBody data={ pictureData }/>;
+    const header = pictureData.name;
+    const buttons = renderButtons(pictureData.buttons, setModalData);
+    setModalData({ header, body: pictureBody, buttons, comments: pictureData.comments });
   }
 
-  const { data, isLoading, error } = useRequest(GALLERY_DATA_URL);
-  console.log('asdf data', data);
-  console.log('asdf loading', isLoading);
-  console.log('asdf error', error);
-
-  let body = (
+  let body = myData && (
     <div className='Gallery'>
-      { galleryData.map((painting, idx) => (
+      { myData.map((painting: any, idx: number) => (
         <Painting
           key={ painting.name }
           painting={ painting }
@@ -95,11 +93,10 @@ export const Gallery = ({ setModalData }: PropsTypes): JSX.Element => {
   );
 
   if (error) {
-    body = <p>Oops, error loading...</p>
+    body = <DataError retryFetchData={ retryFetchData }/>;
   } else if (isLoading) {
-    body = <p>loading...</p>;
+    body = <DataLoading />;
   }
-
 
   return (
     <SectionContainer titleSlug = 'gallery' isCollapsible>

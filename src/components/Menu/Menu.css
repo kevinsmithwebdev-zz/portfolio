@@ -8,8 +8,9 @@
   position: sticky;
   top: 0;
   align-items: center; }
-  .Menu .links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+
+.Menu .links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }

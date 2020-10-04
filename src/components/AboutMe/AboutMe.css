@@ -1,5 +1,6 @@
 .AboutMe .links {
   display: flex;
   flex-wrap: wrap; }
-  .AboutMe .links a {
-    padding: 10px 50px; }
+
+.AboutMe .links a {
+  padding: 10px 50px; }
