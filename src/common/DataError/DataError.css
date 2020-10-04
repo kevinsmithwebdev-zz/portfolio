@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.DataError .button {
-  background-color: red;
-  color: white;
-  border-color: #e00; }
+  .DataError .button {
+    background-color: red;
+    color: white;
+    border-color: #e00; }
