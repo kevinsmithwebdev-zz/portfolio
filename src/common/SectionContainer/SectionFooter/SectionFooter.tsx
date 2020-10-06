@@ -33,8 +33,3 @@ const SectionFooter: React.FC<PropsInterface> = ({
 };
 
 export default SectionFooter;
-
-// { isCollapsed
-//   ? <FaAngleDoubleDown style={ { color: 'green', pointerEvents: 'none' } } />
-//   : <FaAngleDoubleUp style={ { color: 'red', pointerEvents: 'none' } }/>
-// }

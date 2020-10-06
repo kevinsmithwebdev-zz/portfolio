@@ -17,9 +17,9 @@ const Menu = () => {
     <div className='Menu' >
       <Logo />
 
-      <span className='links'>
+      <nav className='links'>
         { links.map(linkName => <Link key={ linkName } linkName={ linkName } /> ) }
-      </span>
+      </nav>
 
       <MenuButtons />
     </div>

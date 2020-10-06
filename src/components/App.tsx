@@ -24,13 +24,13 @@ const App = () => {
         onClick={ clickHandler }
       >
         <Menu />
-        <div className='routesWrapper'>
+        <main className='routesWrapper'>
           <Introduction />
           <Skills />
           <Gallery setModalData={ setModalData} />
           <AboutMe />
           <Contact/>
-        </div>
+        </main>
       </div>
 
       <AppModal data={ modalData } setModalData={ setModalData } />

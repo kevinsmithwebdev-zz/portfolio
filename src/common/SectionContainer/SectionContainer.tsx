@@ -21,18 +21,20 @@ const SectionContainer = ({
     : 'content';
 
   return (
-    <div className='SectionContainer' >
-      { !!titleSlug && <h2 className='title'>{ title }</h2> }
-      <div className={ contentClassName }>
-        { children }
-      </div>
+    <section id={ titleSlug } className='SectionContainerWrapper' >
+      <div className='SectionContainer' >
+        { !!titleSlug && <h2 className='title'>{ title }</h2> }
+        <div className={ contentClassName }>
+          { children }
+        </div>
 
-      <SectionFooter
-          isCollapsed={ isCollapsed }
-          isCollapsible={ isCollapsible }
-          setIsCollapsed={ setIsCollapsed }
-        />
-    </div>
+        <SectionFooter
+            isCollapsed={ isCollapsed }
+            isCollapsible={ isCollapsible }
+            setIsCollapsed={ setIsCollapsed }
+          />
+      </div>
+    </section>
   );
 }
 

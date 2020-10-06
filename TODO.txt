@@ -12,3 +12,4 @@ add copyright
 load json files from s3? spinners?
 detect language?
 better section collapse/expand
+fix sticky navbar overlapping anchors, narrow width
